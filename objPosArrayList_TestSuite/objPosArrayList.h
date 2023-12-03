@@ -11,6 +11,7 @@ class objPosArrayList
         objPos* aList;
         int sizeList;
         int sizeArray;
+        void resizeArray(int newCapacity);
 
     public:
         objPosArrayList();

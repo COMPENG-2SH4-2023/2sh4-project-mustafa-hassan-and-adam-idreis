@@ -1,7 +1,8 @@
 #include "MacUILib.h"
+#include <windows.h>
+
 
 print_ptr MacUILib_printf;
-
 #ifdef WINDOWS
 
 	#include <conio.h>
@@ -19,7 +20,8 @@ print_ptr MacUILib_printf;
 
 	void MacUILib_Delay(int usec)
 	{
-		usleep(usec);
+    	Sleep(usec / 1000);
+		//usleep(usec);
 	}
 	
 	int MacUILib_hasChar(void)

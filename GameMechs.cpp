@@ -95,7 +95,7 @@ void GameMechs::generateFood(objPos *playerPos, objPosArrayList *snakeBody) {
 
     } while (!isUniquePos);
 
-    foodPos.setObjPos(newX, newY, 'F'); // 'F' for food
+    foodPos.setObjPos(newX, newY, 'O'); // 'F' for food
 }
 
 

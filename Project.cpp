@@ -148,8 +148,8 @@ void DrawScreen(void) {
     else if(myGM->getLoseFlagStatus() == true){
         MacUILib_printf("\n\nSorry you lost!! :/");
         MacUILib_printf("\nFinal Score: %d\n", myPlayer->getScore());
-        MacUILib_printf("\n\n--press esc key to quit or wait for shut down--");
-        MacUILib_Delay(5000000);
+        MacUILib_printf("\n\n--wait for shut down--");
+        MacUILib_Delay(6000000);
         myGM->setExitTrue();
         }
 
